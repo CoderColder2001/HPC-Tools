@@ -24,7 +24,16 @@ alias nrun='$HOME/work/NohupRun/dist/nrun'
 
 ## 使用
 
+sh示例：  
+```sh
+#! /bin/bash
+python xxx.py <args, ...>
+scancel $SLURM_JOB_ID
+```
+
 ```bash
+export SLURM_JOB_ID = XXX # 分配的任务id
+
 nrun ./xxx.sh
 nrun python xxx.py <args, ...>
 ```
