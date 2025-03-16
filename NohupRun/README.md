@@ -34,6 +34,9 @@ scancel $SLURM_JOB_ID
 ```bash
 export SLURM_JOB_ID = XXX # 分配的任务id
 
+dos2unix xxx.sh # 如果在windows下编辑的
+chmod -x xxx.sh
+
 nrun ./xxx.sh
 nrun python xxx.py <args, ...>
 ```
